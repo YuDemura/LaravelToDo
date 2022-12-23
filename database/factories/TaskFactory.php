@@ -22,4 +22,18 @@ class TaskFactory extends Factory
             'description' => fake()->word(),
         ];
     }
+
+    public function ready()
+    {
+        return $this->state(fn ()  => [
+            'status' => 1
+        ]);
+    }
+
+    public function doing()
+    {
+        return $this->state(fn ()  => [
+            'status' => 2
+        ]);
+    }
 }

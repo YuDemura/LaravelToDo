@@ -33,7 +33,6 @@
             <a class="navbar-brand" href="#">TODO</a>
 
         </div>
-        </div>
     </nav>
 
     <div class="container">
